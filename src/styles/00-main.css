@@ -12,10 +12,12 @@
     --bold: 700;
     --regular: 400;
     --fontExtraLarge: 3.2rem;
+    --fontMediumLarge: 2.8rem;
     --fontLarge: 1.4rem;
     --fontRegular: 1rem;
     --fontSmall: 0.85rem;
     --fontExtraSmall: 0.75rem;
+    --leftMainPadding: 1rem;
 }
 
 button {
@@ -26,7 +28,7 @@ button {
     border: none;
     outline: none;
     font-size: var(--fontLarge);
-    font-weight: 300;
+    font-weight: var(--regular);
     text-decoration: underline;
     text-decoration-thickness: 1px;
 }
