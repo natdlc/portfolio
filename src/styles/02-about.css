@@ -47,3 +47,49 @@
     gap: 0.8rem;
     padding: 0;
 }
+
+.about-desc {
+    position: relative;
+}
+
+.about-desc h2 {
+    padding-top: 4rem;
+    padding-left: var(--leftMainPadding);
+}
+
+.about-desc p {
+    padding-top: 0.5rem;
+    padding-left: var(--leftMainPadding);
+    line-height: var(--lineHeight);
+    padding-right: 1rem;
+}
+
+.about-desc a {
+    position: relative;
+    margin-top: 0.5rem;
+    display: block;
+    color: var(--light);
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    text-decoration: underline;
+    padding-left: 2.5rem;
+}
+
+.about-desc a::before {
+    position: absolute;
+    content: '→';
+    left: 1rem;
+}
+
+.about-desc-line {
+    width: 50%;
+    height: 1px;
+    background-color: var(--light);
+    margin-top: 5rem;
+}
+
+.about-desc-line.last {
+    background: none;
+    border-top: 1px solid var(--light);
+    padding-bottom: 6rem;
+}
