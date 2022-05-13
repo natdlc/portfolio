@@ -25,6 +25,7 @@
     font-size: var(--fontMediumLarge);
     font-weight: var(--extraBold);
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about-subtitle h2 {
@@ -55,6 +56,7 @@
 .about-desc h2 {
     padding-top: 4rem;
     padding-left: var(--leftMainPadding);
+    font-family: var(--famTwo);
 }
 
 .about-desc p {

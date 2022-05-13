@@ -18,6 +18,7 @@
 .header-name p {
     font-weight: var(--extraBold);
     font-size: var(--fontRegular);
+    font-family: var(--famTwo);
 }
 
 .header-name-line {
@@ -37,6 +38,10 @@
     text-shadow: 5px -6px 0px var(--textShadow);
 }
 
+.header-title p {
+    font-family: var(--famTwo);
+}
+
 .header-title p:last-child {
     margin-top: -1.25rem;
 }
@@ -51,6 +56,7 @@
 
 .header-description p span {
     font-weight: var(--extraBold);
+    font-family: var(--famTwo);
 }
 
 .cta-header {

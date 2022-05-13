@@ -1,24 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 *, *::before, *::after {
     font-family: 'Open Sans', sans-serif;
 }
 
 :root {
-    --light: #c3a995;
-    --dark: #593d3b;
+    --light: #E2D5CB;
+    --dark: #312221;
     --textShadow: #AB947E;
     --extraBold: 900;
     --bold: 700;
-    --regular: 400;
-    --fontExtraLarge: 3.2rem;
-    --fontMediumLarge: 2.8rem;
+    --regular: 500;
+    --fontExtraLarge: 2.9rem;
+    --fontMediumLarge: 2.4rem;
     --fontLarge: 1.4rem;
     --fontRegular: 1rem;
     --fontSmall: 0.85rem;
     --fontExtraSmall: 0.75rem;
     --leftMainPadding: 1rem;
     --lineHeight: 2;
+    --famOne: 'Open Sans', sans-serif;
+    --famTwo: 'Montserrat', sans-serif;
 }
 
 button {
@@ -32,6 +34,7 @@ button {
     font-weight: var(--regular);
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    font-family: var(--famTwo);
 }
 
 .btn-dark {
@@ -42,6 +45,7 @@ button {
 
 .btn-dark::after {
     position: absolute;
+    font-family: var(--famTwo);
     content: '←';
     color: var(--dark);
     right: -25px;
@@ -49,7 +53,7 @@ button {
 
 .btn-light {
     background-color: var(--light);
-    color: var(--light);
+    color: var(--dark);
     position: relative;
 }
 
