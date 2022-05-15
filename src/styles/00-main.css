@@ -23,6 +23,7 @@
     --famTwo: 'Montserrat', sans-serif;
     --arrowPadding: 1rem;
     --aboutLinkPadding: 2.5rem;
+    scroll-behavior: smooth;
 }
 
 button {
@@ -87,7 +88,6 @@ h2 {
         --fontSmall: 1rem;
         --fontExtraSmall: 0.85rem;
         --leftMainPadding: 2rem;
-        --lineHeight: 2;
         --arrowPadding: 2rem;
         --aboutLinkPadding: 4rem;
     }
@@ -96,5 +96,25 @@ h2 {
     .btn-light::after {
         right: -35px;
         bottom: 5px;
+    }
+}
+
+@media (min-width: 760px) {
+    :root {
+        --fontExtraLarge: 6.3rem;
+        --fontMediumLarge: 3.4rem;
+        --fontLarge: 2.3rem;
+        --fontRegular: 1.5rem;
+        --fontSmall: 1.2rem;
+        --fontExtraSmall: 1rem;
+        --leftMainPadding: 2.4rem;
+        --arrowPadding: 2.4rem;
+        --aboutLinkPadding: 4rem;
+    }
+
+    .btn-dark::after,
+    .btn-light::after {
+        right: -45px;
+        bottom: 8px;
     }
 }

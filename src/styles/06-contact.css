@@ -45,6 +45,7 @@
     padding-right: 1rem;
     padding-bottom: 8rem;
     line-height: var(--lineHeight);
+    font-size: var(--fontRegular);
 }
 
 .contact-cta-box {

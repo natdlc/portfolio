@@ -56,12 +56,18 @@
     padding-right: var(--leftMainPadding);
 }
 
+.project-details p {
+    font-size: var(--fontRegular);
+}
+
 .project-details ul {
     padding: var(--leftMainPadding);
+    padding-top: 0;
 }
 
 .project-details li {
     position: relative;
+    font-size: var(--fontRegular);
 }
 
 .project-details li::before {

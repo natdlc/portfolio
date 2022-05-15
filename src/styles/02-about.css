@@ -22,7 +22,7 @@
 
 .about-name h1{
     line-height: 1.25;
-    font-size: var(--fontMediumLarge);
+    font-size: var(--fontExtraLarge);
     font-weight: var(--extraBold);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -39,12 +39,15 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: fit-content;
+}
+
+.photo-container img {
+    width: 50%;
 }
 
 .photo-icons {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 0.8rem;
     padding: 0;
 }
@@ -57,6 +60,7 @@
     padding-top: 4rem;
     padding-left: var(--leftMainPadding);
     font-family: var(--famTwo);
+    font-size: var(--fontLarge);
 }
 
 .about-desc p {
@@ -96,4 +100,35 @@
     background: none;
     border-top: 1px solid var(--light);
     padding-bottom: 6rem;
+}
+
+@media (min-width: 760px) {
+    .about-title {
+        gap: 0;
+    }
+
+    .about-name h1 {
+        line-height: 1;
+    }
+    
+    .about-subtitle {
+        margin-top: -1rem;
+    }
+
+    .about-photo {
+        width: fit-content;
+    }
+
+    .photo-container img {
+        width: 360px;
+    }
+
+    .photo-icons {
+        padding-top: 1rem;
+        justify-content: space-between;
+    }
+
+    .photo-icons img {
+        width: 50px;
+    }
 }

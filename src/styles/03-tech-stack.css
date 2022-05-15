@@ -11,7 +11,7 @@
 }
 
 .tech-stack-title h1 {
-    font-size: var(--fontMediumLarge);
+    font-size: var(--fontExtraLarge);
     font-family: var(--famTwo);
     padding-top: 3rem;
     padding-left: var(--leftMainPadding);
