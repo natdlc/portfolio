@@ -21,6 +21,8 @@
     --lineHeight: 2;
     --famOne: 'Open Sans', sans-serif;
     --famTwo: 'Montserrat', sans-serif;
+    --arrowPadding: 1rem;
+    --aboutLinkPadding: 2.5rem;
 }
 
 button {
@@ -74,4 +76,25 @@ li {
 
 h2 {
     text-transform: uppercase;
+}
+
+@media (min-width: 570px) {
+    :root {
+        --fontExtraLarge: 3.9rem;
+        --fontMediumLarge: 2.9rem;
+        --fontLarge: 2rem;
+        --fontRegular: 1.3rem;
+        --fontSmall: 1rem;
+        --fontExtraSmall: 0.85rem;
+        --leftMainPadding: 2rem;
+        --lineHeight: 2;
+        --arrowPadding: 2rem;
+        --aboutLinkPadding: 4rem;
+    }
+
+    .btn-dark::after,
+    .btn-light::after {
+        right: -35px;
+        bottom: 5px;
+    }
 }

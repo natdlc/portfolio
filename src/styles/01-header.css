@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 1rem;
     background-color: var(--light);
-    padding-left: 1rem;
+    padding-left: var(--leftMainPadding);
     padding-top: 1rem;
     text-transform: uppercase;
     color: var(--dark);
@@ -117,4 +117,8 @@
     width: 64%;
     background-color: var(--dark);
     right: 0;
+}
+
+@media (min-width: 570px) {
+
 }

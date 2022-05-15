@@ -41,6 +41,7 @@
 
 .process-list p {
     line-height: var(--lineHeight);
+    font-size: var(--fontRegular);
 }
 
 .process-cta {

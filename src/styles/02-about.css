@@ -64,6 +64,7 @@
     padding-left: var(--leftMainPadding);
     line-height: var(--lineHeight);
     padding-right: 1rem;
+    font-size: var(--fontRegular);
 }
 
 .about-desc a {
@@ -74,13 +75,14 @@
     text-transform: uppercase;
     font-weight: var(--bold);
     text-decoration: underline;
-    padding-left: 2.5rem;
+    padding-left: var(--aboutLinkPadding);
+    font-size: var(--fontRegular);
 }
 
 .about-desc a::before {
     position: absolute;
     content: '→';
-    left: 1rem;
+    left: var(--arrowPadding);
 }
 
 .about-desc-line {
