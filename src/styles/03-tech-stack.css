@@ -19,7 +19,7 @@
 }
 
 .tech-stack-section {
-    padding-top: 4rem;
+    padding-top: 8rem;
 }
 
 .tech-stack-section > div:first-child h1 {
@@ -84,4 +84,34 @@
     border: none;
     border-top: 1px solid var(--dark);
     margin-top: 3rem;
+}
+
+@media (min-width: 760px) {
+    .tech-stack-section {
+        padding-top: 10rem;
+    }
+    .tech-stack-section>div:first-child h1::after {
+        width: 60%;
+    }
+
+    .tech-stack-section>p {
+        padding-top: 1.5rem;
+    }
+
+    .tech-stack-icons {
+        padding-top: 1.5rem;
+        gap: 4rem;
+    }
+
+    .icons {
+        gap: 2rem;
+    }
+
+    .icon-set {
+        gap: 1.5rem;
+    }
+
+    .icon-set img {
+        width: 50px;
+    }
 }

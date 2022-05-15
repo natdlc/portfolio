@@ -21,11 +21,12 @@
 
 .process-list {
     padding: 0;
+    padding-top: 4rem;
     padding-left: var(--leftMainPadding);
     padding-right: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 8rem;
 }
 
 .process-list li {
@@ -55,4 +56,23 @@
     height: 1px;
     border-top: 1px solid var(--light);
     padding-top: 3rem;
+}
+
+@media (min-width: 760px) {
+    .process-list {
+        padding-top: 4rem;
+        gap: 10rem;
+    }
+    .process-img-container img {
+        width: 500px;
+    }
+
+    .process-cta {
+        margin-bottom: 6rem;
+    }
+
+    .process-line-bottom {
+        padding-top: 10rem;
+    }
+
 }

@@ -109,8 +109,9 @@ h2 {
         --fontExtraSmall: 1rem;
         --leftMainPadding: 2.4rem;
         --arrowPadding: 2.4rem;
-        --aboutLinkPadding: 4rem;
+        --aboutLinkPadding: 4.5rem;
     }
+    
 
     .btn-dark::after,
     .btn-light::after {
