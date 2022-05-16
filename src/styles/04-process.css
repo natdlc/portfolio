@@ -76,3 +76,21 @@
     }
 
 }
+
+@media (min-width: 990px) {
+    #process > * {
+        padding-left: var(--leftLgPadding);
+    }
+
+    .process-title h1 {
+        padding-left: 0;
+    }
+
+    .process-cta {
+        margin-left: 0;
+    }
+
+    .process-list p {
+        padding-right: var(--rightLgPadding);
+    }
+}

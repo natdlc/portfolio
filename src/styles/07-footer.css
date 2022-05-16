@@ -66,3 +66,21 @@
         justify-content: space-between;
     }
 }
+
+@media (min-width: 990px) {
+    #footer > .footer-socials {
+        padding-left: var(--leftLgPadding);
+    }
+
+    .footer-tablet {
+        padding-right: var(--rightLgPadding);
+    }
+
+    .footer-menu.footer-socials {
+        padding-left: 0;
+    }
+
+    .copyright {
+        padding-left: var(--leftLgPadding);
+    }
+}

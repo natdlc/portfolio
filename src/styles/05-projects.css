@@ -129,3 +129,17 @@
         background-color: var(--dark);
     }
 }
+
+@media (min-width: 990px) {
+    #projects > * {
+        padding-left: var(--leftLgPadding);
+    }
+
+    #projects h1 {
+        padding-left: 0;
+    }
+
+    #projects > .project-line-bot {
+        padding-left: 0;
+    }
+}

@@ -11,6 +11,7 @@
     --extraBold: 900;
     --bold: 700;
     --regular: 500;
+    --weightLight: 300;
     --fontExtraLarge: 2.9rem;
     --fontMediumLarge: 2.4rem;
     --fontLarge: 1.4rem;
@@ -18,6 +19,9 @@
     --fontSmall: 0.85rem;
     --fontExtraSmall: 0.75rem;
     --leftMainPadding: 1rem;
+    --leftLgPadding: 10vw;
+    --rightMainPadding: 1rem;
+    --rightLgPadding: 10vw;
     --lineHeight: 2;
     --famOne: 'Open Sans', sans-serif;
     --famTwo: 'Montserrat', sans-serif;

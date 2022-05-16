@@ -46,6 +46,7 @@
     font-size: var(--fontRegular);
     line-height: var(--lineHeight);
     padding-top: 0.5rem;
+    padding-right: var(--rightMainPadding);
 }
 
 .tech-stack-icons {
@@ -100,7 +101,7 @@
 
     .tech-stack-icons {
         padding-top: 1.5rem;
-        gap: 4rem;
+        gap: 8rem;
     }
 
     .icons {
@@ -113,5 +114,23 @@
 
     .icon-set img {
         width: 50px;
+    }
+}
+
+@media (min-width: 990px) {
+    #tech-stack > * {
+        padding-left: var(--leftLgPadding);
+    }
+
+    #tech-stack > * > * {
+        padding-left: 0;
+    }
+
+    .tech-stack-section > div:first-child > h1 {
+        padding-left: 0;
+    }
+
+    .tech-stack-section > p {
+        padding-right: var(--rightLgPadding);
     }
 }
