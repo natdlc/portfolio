@@ -134,3 +134,35 @@
         padding-right: var(--rightLgPadding);
     }
 }
+
+@media (min-width: 1200px) {
+    .tech-stack-line {
+        padding-top: 10rem;
+    }
+
+    .tech-stack-title h1 {
+        margin-top: 8rem;
+    }
+
+    .tech-stack-section {
+        padding-top: 25rem;
+    }
+
+    .tech-stack-section.front-end {
+        padding-top: 15rem;
+    }
+
+    .tech-stack-section > p {
+        width: 700px;
+    }
+
+    .tech-stack-cta {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    
+    .tech-stack-line:last-child {
+
+        padding-bottom: 4rem;
+    }
+}
