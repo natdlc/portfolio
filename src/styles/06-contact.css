@@ -134,3 +134,22 @@
         padding-right: var(--rightLgPadding);
     }
 }
+
+@media (min-width: 1200px) {
+    .contact-line {
+        padding-top: 14rem;
+        padding-bottom: 6rem;
+    }
+
+    .contact-tablet {
+        gap: 3rem;
+    }
+
+    .contact-tablet > p {
+        width: 450px;
+    }
+
+    .contact-cta-box {
+        left: -200px;
+    }
+}

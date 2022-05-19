@@ -143,3 +143,24 @@
         padding-left: 0;
     }
 }
+
+@media (min-width: 1200px) {
+    .projects-line {
+        padding-top: 12rem;
+        margin-bottom: 8rem;
+    }
+
+    .projects {
+        padding-top: 10rem;
+        gap: 24rem;
+    }
+
+    .project-details {
+        width: 450px;
+    }
+
+    .project-line-bot {
+        padding-top: 8rem;
+        padding-bottom: 14rem;
+    }
+}

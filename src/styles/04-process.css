@@ -94,3 +94,36 @@
         padding-right: var(--rightLgPadding);
     }
 }
+
+@media (min-width: 1200px) {
+    .process-line {
+        padding-top: 12rem;
+    }
+
+    .process-title {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .process-list {
+        gap: 24rem;
+    }
+
+    .process-list p {
+        width: 700px;
+    }
+
+    .process-list li:last-child {
+        padding-bottom: 6rem;
+    }
+
+    #process > a {
+        display: block;
+        padding-bottom: 0;
+        margin-bottom: 8rem;
+    }
+
+    .process-line-bottom {
+        padding-top: 14rem;
+    }
+}
