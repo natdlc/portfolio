@@ -205,6 +205,14 @@
         padding-right: var(--rightLgPadding);
     }
 
+    .about-line {
+        margin-top: 10rem;
+    }
+
+    .about-title {
+        padding-top: 18rem;
+    }
+
     .about-desc-1.about-desc {
         padding-right: 0 !important;
     }
