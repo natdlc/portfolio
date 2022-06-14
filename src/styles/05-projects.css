@@ -3,7 +3,6 @@
 	color: var(--dark);
 }
 
-
 .projects-line {
 	width: 50%;
 	height: 1px;
@@ -161,6 +160,10 @@
 }
 
 @media (min-width: 1200px) {
+	.project-img-container {
+		width: 550px;
+	}
+
 	.projects-line {
 		padding-top: 12rem;
 		margin-bottom: 8rem;
@@ -186,6 +189,10 @@
 	.projects {
 		padding-left: 17rem !important;
 	}
+
+		.project-img-container {
+		width: 650px;
+	}
 }
 
 @media (min-width: 1800px) {
@@ -194,4 +201,3 @@
 		padding-left: 22rem !important;
 	}
 }
-

@@ -55,18 +55,18 @@
 
 @media (min-width: 1000px) {
 	.scroll-top.visible {
-		width: 3.5rem;
-		height: 3.5rem;
+		width: 4rem;
+		height: 4rem;
 		top: unset;
 		bottom: 55px;
 		left: 55px;
 	}
 
 	.scroll-top_shapes::before {
-		left: 8px;
+		left: 9px;
 	}
 	.scroll-top_shapes::after {
-		left: -8px;
+		left: -9px;
 	}
 }
 

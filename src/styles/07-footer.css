@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     color: var(--dark);
     gap: 2rem;
+
 }
 
 .footer-menu {
@@ -40,6 +41,7 @@
     display: flex;
     padding: var(--leftMainPadding);
     gap: 1rem;
+    margin-top: 5rem;
 }
 
 .copyright * {
