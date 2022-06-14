@@ -14,7 +14,7 @@
 	text-decoration: none;
 	font-weight: 300;
 	display: auto;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .scroll-top:not(.visible) {
@@ -58,15 +58,21 @@
 		width: 3.5rem;
 		height: 3.5rem;
 		top: unset;
-    bottom: 55px;
-    left: unset;
-		right: 55px;
+		bottom: 55px;
+		left: 55px;
 	}
 
 	.scroll-top_shapes::before {
-    left: 8px;
+		left: 8px;
 	}
 	.scroll-top_shapes::after {
-    left: -8px;
-  }
+		left: -8px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.scroll-top.visible {
+		left: 50%;
+		bottom: 70px;
+	}
 }

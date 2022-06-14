@@ -98,15 +98,41 @@
 
 @media (min-width: 1000px) {
 	.close_btn {
-		right: unset;
-		left: 75px;
+		right: 75px;
 		bottom: 75px;
 	}
 
 	.navbar_btn {
-		left: 50px;
+		right: 50px;
 		bottom: 50px;
-		right: unset;
+		width: 6rem;
+		height: 6rem;
+	}
+
+	.navbar_btn_shapes {
+		height: 4px;
+		width: 50%;
+	}
+	.navbar_btn_shapes::before {
+		height: 4px;
+		margin-top: 13px;
+	}
+	.navbar_btn_shapes::after {
+		height: 4px;
+		margin-top: -13px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.close_btn {
+		left: unset;
+		right: 16%;
+		bottom: 120px;
+	}
+
+	.navbar_btn {
+		right: 15%;
+		bottom: 80px;
 		width: 6rem;
 		height: 6rem;
 	}

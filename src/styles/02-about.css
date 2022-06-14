@@ -48,9 +48,18 @@
 
 .photo-icons {
 	display: flex;
-	/* justify-content: center; */
-	gap: 0.8rem;
+	gap: 8vw;
 	padding: 0;
+}
+
+.photo-icons a {
+	width: 6vw;
+	display: block;
+}
+
+.photo-icons img {
+	width: 100%;
+	display: block;
 }
 
 .about-desc {
@@ -148,6 +157,7 @@
 	.photo-icons {
 		padding-top: 1rem;
 		justify-content: space-between;
+		gap: 0;
 	}
 
 	.photo-icons img {
