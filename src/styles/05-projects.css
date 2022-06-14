@@ -3,6 +3,7 @@
 	color: var(--dark);
 }
 
+
 .projects-line {
 	width: 50%;
 	height: 1px;
@@ -88,6 +89,20 @@
 	position: absolute;
 	content: "•";
 	left: -15px;
+}
+
+.project-links {
+	display: flex;
+	gap: 1rem;
+}
+
+.project-icon {
+	width: 50px;
+	display: block;
+}
+
+.project.last .project-links {
+	padding-bottom: 10rem !important;
 }
 
 @media (min-width: 760px) {
@@ -179,3 +194,4 @@
 		padding-left: 22rem !important;
 	}
 }
+

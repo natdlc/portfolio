@@ -154,6 +154,10 @@
 		gap: 0;
 	}
 
+	.process-list li:nth-child(odd) {
+		gap: 3rem;
+	}
+
 	.process-list li:nth-child(even) > p {
 		padding-right: 0 !important;
 		flex-basis: 40%;
@@ -164,7 +168,7 @@
 	}
 
 	.process-img-container {
-		flex-basis: 50%;
+		flex-basis: 40%;
 	}
 
 	.process-img-container img {
@@ -175,4 +179,11 @@
 		order: 1;
 	}
 
+}
+
+@media(min-width: 1800px) {
+	.process-list li:nth-child(1) {
+		flex-direction: column;
+		align-items: start;
+	}
 }

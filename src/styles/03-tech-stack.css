@@ -87,6 +87,10 @@
 	margin-top: 3rem;
 }
 
+.icon-set img {
+	max-width: 30px;
+}
+
 @media (min-width: 760px) {
 	.tech-stack-section {
 		padding-top: 10rem;
