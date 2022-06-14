@@ -76,13 +76,21 @@
 	align-items: center;
 }
 
-.about-desc p {
+.about-desc p, .about-desc ul li {
 	padding-top: 0.5rem;
 	padding-left: var(--leftMainPadding);
 	line-height: var(--lineHeight);
 	padding-right: 1rem;
 	font-size: var(--fontRegular);
 	opacity: 0.75;
+}
+
+.about-desc ul li {
+	padding: 0;
+}
+
+.about-desc ul {
+	max-width: 650px;
 }
 
 .about-desc a {
