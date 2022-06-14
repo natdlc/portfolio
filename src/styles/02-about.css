@@ -177,12 +177,12 @@
 	}
 
 	.about-desc-1 h2::after {
-		content: "";
+		/* content: "";
 		position: absolute;
 		width: 55%;
 		height: 1px;
 		background-color: var(--light);
-		right: 0;
+		right: 0; */
 	}
 
 	.about-desc-2 .about-desc-line {
@@ -239,12 +239,12 @@
 	}
 
 	.about-desc-1 h2::after {
-		content: "";
+		/* content: "";
 		position: absolute;
 		width: 55%;
 		height: 1px;
 		background-color: var(--light);
-		right: 0;
+		right: 0; */
 	}
 
 	.about-desc > h2 {
