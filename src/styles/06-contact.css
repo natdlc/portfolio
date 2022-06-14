@@ -69,6 +69,7 @@
 .contact-cta button {
 	font-size: var(--fontRegular);
 	color: var(--light);
+	cursor: pointer;
 }
 
 .contact-cta {
@@ -151,5 +152,19 @@
 
 	.contact-cta-box {
 		left: -200px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.contact-title h1,
+	.contact-icon {
+		padding-left: 17rem !important;
+	}
+}
+
+@media (min-width: 1800px) {
+	.contact-title h1,
+	.contact-icon {
+		padding-left: 22rem !important;
 	}
 }

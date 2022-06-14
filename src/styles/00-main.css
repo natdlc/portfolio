@@ -44,12 +44,14 @@ button {
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
 	font-family: var(--famTwo);
+    cursor: pointer;
 }
 
 .btn-dark {
 	background-color: var(--dark);
 	color: var(--light);
 	position: relative;
+    cursor: pointer;
 }
 
 .btn-dark::after {
@@ -58,12 +60,14 @@ button {
 	content: "←";
 	color: var(--dark);
 	right: -25px;
+    cursor: pointer;
 }
 
 .btn-light {
 	background-color: var(--light);
 	color: var(--dark);
 	position: relative;
+    cursor: pointer;
 }
 
 .btn-light::after {
@@ -71,10 +75,12 @@ button {
 	content: "←";
 	color: var(--light);
 	right: -25px;
+    cursor: pointer;
 }
 
 a {
 	text-decoration: none;
+    cursor: pointer;
 }
 
 li {
