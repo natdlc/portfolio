@@ -8,6 +8,9 @@ import "./styles/05-projects.css";
 import "./styles/06-contact.css";
 import "./styles/07-footer.css";
 import "./styles/08-navbar.css";
+import "./styles/09-scrollTop.css";
 import Navbar from "./navbar";
+import ScrollTop from "./scrollTop";
 
 Navbar();
+ScrollTop();

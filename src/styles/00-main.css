@@ -1,125 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-*, *::before, *::after {
-    font-family: 'Open Sans', sans-serif;
+*,
+*::before,
+*::after {
+	font-family: "Open Sans", sans-serif;
 }
 
 :root {
-    --light: #E2D5CB;
-    --dark: #312221;
-    --textShadow: #AB947E;
-    --extraBold: 900;
-    --bold: 700;
-    --regular: 500;
-    --weightLight: 300;
-    --fontExtraLarge: 2.9rem;
-    --fontMediumLarge: 2.4rem;
-    --fontLarge: 1.4rem;
-    --fontRegular: 1rem;
-    --fontSmall: 0.85rem;
-    --fontExtraSmall: 0.75rem;
-    --leftMainPadding: 1rem;
-    --leftLgPadding: 10vw;
-    --rightMainPadding: 1rem;
-    --rightLgPadding: 10vw;
-    --lineHeight: 2;
-    --famOne: 'Open Sans', sans-serif;
-    --famTwo: 'Montserrat', sans-serif;
-    --arrowPadding: 1rem;
-    --aboutLinkPadding: 2.5rem;
-    scroll-behavior: smooth;
+	--light: #e2d5cb;
+	--dark: #312221;
+	--textShadow: #ab947e;
+	--extraBold: 900;
+	--bold: 700;
+	--regular: 500;
+	--weightLight: 300;
+	--fontExtraLarge: 2.9rem;
+	--fontMediumLarge: 2.4rem;
+	--fontLarge: 1.4rem;
+	--fontRegular: 1rem;
+	--fontSmall: 0.85rem;
+	--fontExtraSmall: 0.75rem;
+	--leftMainPadding: 1rem;
+	--leftLgPadding: 10vw;
+	--rightMainPadding: 1rem;
+	--rightLgPadding: 10vw;
+	--lineHeight: 2;
+	--famOne: "Open Sans", sans-serif;
+	--famTwo: "Montserrat", sans-serif;
+	--arrowPadding: 1rem;
+	--aboutLinkPadding: 2.5rem;
+	scroll-behavior: smooth;
 }
 
 button {
-    text-transform: uppercase;
-    padding: 0.2rem 0.85em;
-    background: none;
-    border-radius: none;
-    border: none;
-    outline: none;
-    font-size: var(--fontLarge);
-    font-weight: var(--regular);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    font-family: var(--famTwo);
+	text-transform: uppercase;
+	padding: 0.2rem 0.85em;
+	background: none;
+	border-radius: none;
+	border: none;
+	outline: none;
+	font-size: var(--fontLarge);
+	font-weight: var(--regular);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	font-family: var(--famTwo);
 }
 
 .btn-dark {
-    background-color: var(--dark);
-    color: var(--light);
-    position: relative;
+	background-color: var(--dark);
+	color: var(--light);
+	position: relative;
 }
 
 .btn-dark::after {
-    position: absolute;
-    font-family: var(--famTwo);
-    content: '←';
-    color: var(--dark);
-    right: -25px;
+	position: absolute;
+	font-family: var(--famTwo);
+	content: "←";
+	color: var(--dark);
+	right: -25px;
 }
 
 .btn-light {
-    background-color: var(--light);
-    color: var(--dark);
-    position: relative;
+	background-color: var(--light);
+	color: var(--dark);
+	position: relative;
 }
 
 .btn-light::after {
-    position: absolute;
-    content: '←';
-    color: var(--light);
-    right: -25px;
+	position: absolute;
+	content: "←";
+	color: var(--light);
+	right: -25px;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 h2 {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 @media (min-width: 570px) {
-    :root {
-        --fontExtraLarge: 3.9rem;
-        --fontMediumLarge: 2.9rem;
-        --fontLarge: 2rem;
-        --fontRegular: 1.3rem;
-        --fontSmall: 1rem;
-        --fontExtraSmall: 0.85rem;
-        --leftMainPadding: 2rem;
-        --arrowPadding: 2rem;
-        --aboutLinkPadding: 4rem;
-    }
+	:root {
+		--fontExtraLarge: 3.9rem;
+		--fontMediumLarge: 2.9rem;
+		--fontLarge: 2rem;
+		--fontRegular: 1.3rem;
+		--fontSmall: 1rem;
+		--fontExtraSmall: 0.85rem;
+		--leftMainPadding: 2rem;
+		--arrowPadding: 2rem;
+		--aboutLinkPadding: 4rem;
+	}
 
-    .btn-dark::after,
-    .btn-light::after {
-        right: -35px;
-        bottom: 5px;
-    }
+	.btn-dark::after,
+	.btn-light::after {
+		right: -35px;
+		bottom: 5px;
+	}
 }
 
 @media (min-width: 760px) {
-    :root {
-        --fontExtraLarge: 6.3rem;
-        --fontMediumLarge: 3.4rem;
-        --fontLarge: 2.3rem;
-        --fontRegular: 1.5rem;
-        --fontSmall: 1.2rem;
-        --fontExtraSmall: 1rem;
-        --leftMainPadding: 2.4rem;
-        --arrowPadding: 2.4rem;
-        --aboutLinkPadding: 4.5rem;
-    }
-    
+	:root {
+		--fontExtraLarge: 6.3rem;
+		--fontMediumLarge: 3.4rem;
+		--fontLarge: 2.3rem;
+		--fontRegular: 1.5rem;
+		--fontSmall: 1.2rem;
+		--fontExtraSmall: 1rem;
+		--leftMainPadding: 2.4rem;
+		--arrowPadding: 2.4rem;
+		--aboutLinkPadding: 4.5rem;
+	}
 
-    .btn-dark::after,
-    .btn-light::after {
-        right: -45px;
-        bottom: 8px;
-    }
+	.btn-dark::after,
+	.btn-light::after {
+		right: -45px;
+		bottom: 8px;
+	}
 }

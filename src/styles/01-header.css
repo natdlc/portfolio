@@ -234,3 +234,10 @@
         font-size: var(--fontRegular);
     }
 }
+
+/*  */
+
+.btn-dark > a {
+    font: inherit;
+    color: inherit;
+}

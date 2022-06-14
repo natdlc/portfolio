@@ -1,0 +1,72 @@
+.scroll-top.visible {
+	position: fixed;
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	top: 15px;
+	left: 15px;
+	text-decoration: none;
+	font-weight: 300;
+	display: auto;
+  cursor: pointer;
+}
+
+.scroll-top:not(.visible) {
+	display: none;
+}
+
+.scroll-top_shapes {
+	position: absolute;
+	width: 40%;
+	background-color: var(--light);
+}
+
+.scroll-top_shapes::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 5px;
+	width: 100%;
+	height: 2px;
+	background-color: var(--light);
+	transform: rotate(45deg);
+}
+
+.scroll-top_shapes::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: -5px;
+	width: 100%;
+	height: 2px;
+	background-color: var(--light);
+	transform: rotate(-45deg);
+}
+
+@media (min-width: 1000px) {
+	.scroll-top.visible {
+		width: 3.5rem;
+		height: 3.5rem;
+		top: unset;
+    bottom: 55px;
+    left: unset;
+		right: 55px;
+	}
+
+	.scroll-top_shapes::before {
+    left: 8px;
+	}
+	.scroll-top_shapes::after {
+    left: -8px;
+  }
+}
