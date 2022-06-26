@@ -1,26 +1,24 @@
-import { useState } from "react";
-import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Works from "./pages/Works";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import AppNav from "./components/AppNav/AppNav";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-	const [page, setPage] = useState("home");
-
-	const setPageHandler = (pageSelection) => {
-		setPage(pageSelection);
-	};
-
-	const currentPage =
-		page === "home" ? (
-			<Home onSetPage={setPageHandler} />
-		) : page === "works" ? (
-			<Works onSetPage={setPageHandler} />
-		) : page === "contact" ? (
-			<Contact onSetPage={setPageHandler} />
-		) : (
-			""
-		);
-	return <>{currentPage}</>;
+	return (
+		<>
+			<Router>
+				<AppNav />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/works" element={<Works />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</Router>
+		</>
+	);
 }
 
 export default App;

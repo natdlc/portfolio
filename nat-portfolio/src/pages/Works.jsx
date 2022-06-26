@@ -1,11 +1,9 @@
 import MainProjectsNav from "../components/Works/MainProjectsNav/MainProjectsNav";
 import SubProjectsNav from "../components/Works/SubProjectsNav/SubProjectsNav";
-import WorksNav from "../components/Works/WorksNav/WorksNav";
 
 const Works = () => {
 	return (
 		<>
-			<WorksNav />
 			<div
 				style={{
 					display: "flex",

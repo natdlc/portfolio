@@ -1,10 +1,9 @@
 import classes from "./Nav.module.css";
 import { v4 as uuidv4 } from "uuid";
 
-console.log(classes);
 const Nav = (props) => {
 	const navMenus = props.menus.map((menu) => {
-		const { menuName, menuLink, target, onClick } = menu;
+		const { menuName, menuLink, target, onClick, linkTo } = menu;
 		return (
 			<li
 				className={`${classes.menuItem} ${props.menuItemClassNames || ""}`}
@@ -20,6 +19,7 @@ const Nav = (props) => {
 	return (
 		<>
 			<ul
+				style={props.style}
 				className={`${classes.menuWrapper} ${
 					props.menuWrapperClassNames || ""
 				}`}
