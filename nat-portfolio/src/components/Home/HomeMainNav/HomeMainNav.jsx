@@ -1,30 +1,30 @@
 import Nav from "../../../UI/Nav/Nav";
+import classes from "./HomeMainNav.module.css";
 
-const HomeNav = () => {
+const HomeMenu = () => {
 	const navMenus = [
 		{
-			menuName: "LinkedIn",
+			menuName: "WORKS",
 			menuLink: "https://www.linkedin.com/in/nat-corpuz/",
 		},
 		{
-			menuName: "Twitter",
+			menuName: "ABOUT",
 			menuLink: "https://twitter.com/corpuz_nat",
 		},
 		{
-			menuName: "GitHub",
+			menuName: "CONTACT",
 			menuLink: "https://github.com/natdlc",
 		},
 	];
-
 	return (
 		<>
 			<Nav
-				menuWrapperClassNames="home-nav-menu-wrapper"
-				menuItemClassNames="nav-menu-item-2"
+				menuItemClassNames="main-item"
 				menus={navMenus}
+				menuWrapperClassNames={classes["home-main-wrapper"]}
 			/>
 		</>
 	);
 };
 
-export default HomeNav;
+export default HomeMenu;

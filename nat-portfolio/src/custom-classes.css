@@ -1,0 +1,26 @@
+.home-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+.nav-menu-item-2 {
+	font-size: var(--menuItemFontSize2);
+	letter-spacing: var(--menuItemLetterSpacing);
+	font-weight: 100;
+	opacity: 0.2;
+}
+
+.home-nav-menu-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 1rem;
+	padding-top: 1rem;
+}
+
+.main-item {
+	font-size: 55px;
+	font-weight: 100;
+	letter-spacing: -3px;
+}

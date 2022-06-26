@@ -5,5 +5,40 @@
 *::after {
 	margin: 0;
 	padding: 0;
-  font-family: 'Work Sans', sans-serif;
+	font-family: "Work Sans", sans-serif;
+}
+
+:root {
+	--light: #e2d5cb;
+	--dark: #312221;
+	--menuItemFontSize2: 10px;
+	--menuItemLetterSpacing: 3.5px;
+	--bodyLeftPadding: 1rem;
+}
+
+body {
+	background-color: var(--dark);
+	color: var(--light);
+	padding-left: var(--bodyLeftPadding);
+}
+
+a {
+	color: var(--light);
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h5 {
+	font-size: 12px;
 }
