@@ -1,19 +1,28 @@
 import Nav from "../../../UI/Nav/Nav";
 import classes from "./HomeMainNav.module.css";
 
-const HomeMenu = () => {
+const HomeMenu = (props) => {
 	const navMenus = [
 		{
 			menuName: "WORKS",
-			menuLink: "https://www.linkedin.com/in/nat-corpuz/",
+			onClick: (e) => {
+				e.preventDefault();
+				props.onSetPage("works");
+			},
 		},
 		{
 			menuName: "ABOUT",
-			menuLink: "https://twitter.com/corpuz_nat",
+			onClick: (e) => {
+				e.preventDefault();
+				props.onSetPage("about");
+			},
 		},
 		{
 			menuName: "CONTACT",
-			menuLink: "https://github.com/natdlc",
+			onClick: (e) => {
+				e.preventDefault();
+				props.onSetPage("contact");
+			},
 		},
 	];
 	return (

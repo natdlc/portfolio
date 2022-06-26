@@ -4,13 +4,13 @@ import { v4 as uuidv4 } from "uuid";
 console.log(classes);
 const Nav = (props) => {
 	const navMenus = props.menus.map((menu) => {
-		const { menuName, menuLink } = menu;
+		const { menuName, menuLink, target, onClick } = menu;
 		return (
 			<li
 				className={`${classes.menuItem} ${props.menuItemClassNames || ""}`}
 				key={uuidv4()}
 			>
-				<a href={menuLink} target="_blank" rel="noreferrer">
+				<a href={menuLink} target={target} onClick={onClick} rel="noreferrer">
 					{menuName}
 				</a>
 			</li>
@@ -20,7 +20,9 @@ const Nav = (props) => {
 	return (
 		<>
 			<ul
-				className={`${classes.menuWrapper} ${props.menuWrapperClassNames || ""}`}
+				className={`${classes.menuWrapper} ${
+					props.menuWrapperClassNames || ""
+				}`}
 			>
 				{navMenus}
 			</ul>

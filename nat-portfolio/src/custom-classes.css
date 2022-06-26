@@ -9,7 +9,6 @@
 	font-size: var(--menuItemFontSize2);
 	letter-spacing: var(--menuItemLetterSpacing);
 	font-weight: 100;
-	opacity: 0.2;
 }
 
 .home-nav-menu-wrapper {
@@ -23,4 +22,36 @@
 	font-size: 55px;
 	font-weight: 100;
 	letter-spacing: -3px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.projects-description, .sub-projects-description {
+	position: absolute;
+	bottom: -50px;
+	right: 15px;
+	font-size: 9px;
+	letter-spacing: 1.5px;
+	max-width: 120px;
+	line-height: 1.5;
+	font-weight: 100;
+	opacity: 0.3;
+}
+
+.sub-projects-description {
+	bottom: -40px;
+	right: 10px;
+}
+
+.sub-projects-nav-item {
+	font-weight: 100;
+	font-size: 12px;
+}
+
+.sub-projects-nav-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
 }

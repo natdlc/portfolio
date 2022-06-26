@@ -1,12 +1,12 @@
 import HomeHeadline from "../components/Home/HomeHeadline/HomeHeadline";
 import HomeMainNav from "../components/Home/HomeMainNav/HomeMainNav";
 import HomeNav from "../components/Home/HomeNav/HomeNav";
-const Home = () => {
+const Home = (props) => {
 	return (
 		<div className="home-wrapper">
 			<HomeNav />
 			<HomeHeadline />
-			<HomeMainNav />
+			<HomeMainNav onSetPage={props.onSetPage} />
 		</div>
 	);
 };
