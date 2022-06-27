@@ -21,15 +21,16 @@ const SubProjectsNav = () => {
 
 	return (
 		<>
-			<div style={{ position: "relative", maxWidth: "200px" }}>
+			<div
+				style={{ position: "relative", maxWidth: "200px", paddingTop: "6rem" }}
+			>
 				<Nav
 					menus={navMenus}
 					menuItemClassNames="sub-projects-nav-item"
 					menuWrapperClassNames="sub-projects-nav-wrapper"
 				/>
 				<p className="sub-projects-description">
-					...fun bite-sized projects from when I was learning the ropes in
-					coding.
+					...fun bite-sized projects when I was learning the ropes.
 				</p>
 			</div>
 		</>

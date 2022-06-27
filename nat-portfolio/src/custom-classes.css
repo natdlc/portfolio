@@ -1,3 +1,8 @@
+#root {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
 .nav-menu-item-2 {
 	font-size: var(--menuItemFontSize2);
 	letter-spacing: var(--menuItemLetterSpacing);
@@ -25,7 +30,7 @@
 .sub-projects-description {
 	position: absolute;
 	bottom: -50px;
-	right: 15px;
+	right: -15px;
 	font-size: 9px;
 	letter-spacing: 1.5px;
 	max-width: 120px;
@@ -36,16 +41,32 @@
 
 .sub-projects-description {
 	bottom: -40px;
-	right: 10px;
+	right: -15px;
 }
 
 .sub-projects-nav-item {
 	font-weight: 100;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .sub-projects-nav-wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 0.3rem;
+}
+
+@media (min-width: 1200px) {
+	.nav-menu-item-2 {
+		font-size: 12px;
+	}
+
+	.main-item {
+		font-size: 80px;
+	}
+}
+
+@media (min-width: 1600px) {
+	#root {
+		max-width: 800px;
+	}
 }

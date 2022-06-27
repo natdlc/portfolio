@@ -6,11 +6,10 @@ const AboutHeadline = () => {
 			<div className={classes["about-wrapper"]}>
 				<h1 className="main-item">Hi, I'm Nat</h1>
 				<p className={classes["about-description"]}>
-					I'm a Web Developer from the Philippines.
+					A Web Developer from the Philippines.
 				</p>
 				<p className={classes["about-description"]}>
-					I've been coding since December 2021. I do it simply because it's what
-					my heart and soul wants.
+					I started coding in 2020. I have 7 cats and 1 dog. When I don't write code, I play video games, watch Netflix, or go for a walk outside.
 				</p>
 			</div>
 		</>

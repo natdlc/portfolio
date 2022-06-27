@@ -21,7 +21,13 @@ const MainProjectsNav = () => {
 
 	return (
 		<>
-			<div style={{ position: "relative" }}>
+			<div
+				style={{
+					position: "relative",
+					width: "fit-content",
+					paddingTop: "5rem",
+				}}
+			>
 				<Nav menus={navMenus} menuItemClassNames="main-item uppercase" />
 				<p className="projects-description">
 					... brought to you by countless hours of coding, fueled by a burning

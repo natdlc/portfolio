@@ -5,12 +5,6 @@ const Works = () => {
 	return (
 		<>
 			<div
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "space-around",
-					height: "80vh",
-				}}
 			>
 				<MainProjectsNav />
 				<SubProjectsNav />
