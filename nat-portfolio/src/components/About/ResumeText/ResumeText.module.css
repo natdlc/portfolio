@@ -1,0 +1,51 @@
+.resume-description {
+  font-weight: 100;
+  font-size: 0.8rem;
+  opacity: 0.3;
+}
+
+.resume-link {
+	font-weight: 100;
+	padding-bottom: 0.2rem;
+	display: inline-block;
+	position: relative;
+  font-size: 0.8rem;
+}
+
+.resume-link::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: -5px;
+	right: 100%;
+	border-bottom: 1px solid var(--light);
+}
+
+.resume-link:hover::before {
+	animation: linkOnHover 0.3s forwards;
+}
+
+.resume-link:not(:hover)::before {
+	animation: linkOnHoverLeave 0.3s forwards;
+}
+
+@keyframes linkOnHover {
+	0% {
+		right: 100%;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes linkOnHoverLeave {
+	0% {
+		right: 0%;
+	}
+
+	100% {
+		right: 100%;
+	}
+}

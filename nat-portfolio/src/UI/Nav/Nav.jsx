@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const Nav = (props) => {
 	const navMenus = props.menus.map((menu) => {
-		const { menuName, menuLink, target, onClick, linkTo } = menu;
+		const { menuName, menuLink, target, onClick } = menu;
 		return (
 			<li
 				className={`${classes.menuItem} ${props.menuItemClassNames || ""}`}
