@@ -4,3 +4,9 @@
   line-height: 2;
 	font-size: 0.7rem;
 }
+
+@media (min-width: 1600px) {
+	.contact-headline_description {
+		width: 70%;
+	}
+}

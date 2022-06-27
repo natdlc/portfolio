@@ -1,0 +1,49 @@
+.app-nav-menu-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	position: relative;
+}
+
+.app-nav-fade-in {
+	animation: app-nav-fade-in 1s forwards;
+}
+
+@keyframes app-nav-fade-in {
+	0% {
+		opacity: 0;
+		top: -25px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+.app-nav-fade-out {
+	animation: app-nav-fade-out 1s forwards;
+}
+
+@keyframes app-nav-fade-out {
+	0% {
+		opacity: 1;
+		top: 0;
+	}
+	100% {
+		opacity: 0;
+		top: -25px;
+	}
+}
+
+.app-nav-menu-item-2 {
+	font-size: var(--menuItemFontSize2);
+	letter-spacing: var(--menuItemLetterSpacing);
+	font-weight: 100;
+}
+
+@media (min-width: 1200px) {
+	.app-nav-menu-item-2 {
+		font-size: 12px;
+	}
+}

@@ -1,13 +1,14 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import Nav from "../../UI/Nav/Nav";
+import classes from "./AppNav.module.css";
 
-const AppNav = () => {
+const AppNav = (props) => {
 	const navigate = useNavigate();
 	const location = useLocation();
 
 	const homeLink = {
 		menuName: "Home",
-		onClick: () => navigate("/"),
+		onClick: () => {navigate("/")},
 	};
 
 	const worksLink = {
@@ -60,11 +61,15 @@ const AppNav = () => {
 			? contactMenu
 			: "";
 
+	const animationController = props.appNavFadeOut && classes["app-nav-fade-out"];
 	return (
 		<>
 			<Nav
-				menuWrapperClassNames="home-nav-menu-wrapper"
-				menuItemClassNames="nav-menu-item-2"
+				menuWrapperClassNames={`
+				${classes["app-nav-menu-wrapper"]}
+				${classes["app-nav-fade-in"]}
+				${animationController} `}
+				menuItemClassNames={classes["app-nav-menu-item-2"]}
 				menus={displayMenus}
 			/>
 		</>

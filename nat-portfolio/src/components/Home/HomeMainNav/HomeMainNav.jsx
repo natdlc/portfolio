@@ -2,12 +2,22 @@ import Nav from "../../../UI/Nav/Nav";
 import classes from "./HomeMainNav.module.css";
 import { useNavigate } from "react-router-dom";
 
-const HomeMenu = () => {
+const HomeMenu = (props) => {
 	const navigate = useNavigate();
+
+	const fadeOutHandler = () => {
+		props.setPageLoaded(false);
+		props.setPageLeaving(true);
+		props.onFadeOut();
+	};
 	const navMenus = [
 		{
 			menuName: "WORKS",
-			onClick: () => navigate("/works"),
+			onClick: async () => {
+				fadeOutHandler();
+				await new Promise((resolve) => setTimeout(resolve, 3000));
+				navigate("/works");
+			},
 		},
 		{
 			menuName: "ABOUT",
@@ -18,11 +28,16 @@ const HomeMenu = () => {
 			onClick: () => navigate("/contact"),
 		},
 	];
+
 	return (
 		<>
 			<Nav
 				style={{ paddingTop: "5rem" }}
-				menuItemClassNames="main-item"
+				menuItemClassNames={`
+				${props.pageLeaving && "element-fade-out"}
+				${props.pageLoaded && "element-fade-in"} 
+				main-item
+				`}
 				menus={navMenus}
 				menuWrapperClassNames={classes["home-main-wrapper"]}
 			/>

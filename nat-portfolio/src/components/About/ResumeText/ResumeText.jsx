@@ -3,7 +3,7 @@ import classes from "./ResumeText.module.css";
 const ResumeText = () => {
 	return (
 		<>
-			<div style={{paddingTop: "5rem", width: "150px", textAlign: "end"}}>
+			<div style={{paddingTop: "5rem", width: "250px", textAlign: "end"}}>
 				<p className={classes["resume-description"]}>
 					If you're interested in knowing about my technical skills and
 					professional experience, you can check my resume by clicking the link below.

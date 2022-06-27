@@ -1,0 +1,43 @@
+.welcome-wrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome {
+	font-weight: 100;
+	letter-spacing: 2.5px;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.welcome::before {
+	content: "";
+  position: absolute;
+	background-color: var(--dark);
+  transform: skew(-25deg);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  animation: welcome 2s forwards;
+}
+
+@keyframes welcome {
+	0% {
+		left: 0;
+	}
+
+	30% {
+		left: 100%;
+	}
+
+	60% {
+		left: 100%;
+	}
+
+	100% {
+		left: -50%;
+	}
+}
