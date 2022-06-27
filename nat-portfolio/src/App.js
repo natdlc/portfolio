@@ -21,13 +21,13 @@ function App() {
 		playWelcomeAnimation();
 	}, []);
 
-	const onAppNavFadeHandler = () => {
-		setAppNavFade(true);
+	const onAppNavFadeHandler = (selection) => {
+		setAppNavFade(selection);
 	};
 
 	const mainView = (
 		<Router>
-			<AppNav appNavFade={appNavFade} />
+			<AppNav appNavFade={appNavFade} setAppNavFade={setAppNavFade} />
 			<Routes>
 				<Route path="/" element={<Home onAppNavFade={onAppNavFadeHandler} />} />
 				<Route path="/works" element={<Works />} />

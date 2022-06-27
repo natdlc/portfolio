@@ -8,22 +8,42 @@ const AppNav = (props) => {
 
 	const homeLink = {
 		menuName: "Home",
-		onClick: () => navigate("/"),
+		onClick: async () => {
+			props.setAppNavFade(true);
+			await new Promise((resolve) => setTimeout(resolve, 2000));
+			navigate("/");
+			props.setAppNavFade(false);
+		},
 	};
 
 	const worksLink = {
 		menuName: "Works",
-		onClick: () => navigate("/works"),
+		onClick: async () => {
+			props.setAppNavFade(true);
+			await new Promise((resolve) => setTimeout(resolve, 2000));
+			navigate("/works");
+			props.setAppNavFade(false);
+		},
 	};
 
 	const aboutLink = {
 		menuName: "About",
-		onClick: () => navigate("/about"),
+		onClick: async () => {
+			props.setAppNavFade(true);
+			await new Promise((resolve) => setTimeout(resolve, 2000));
+			navigate("/about");
+			props.setAppNavFade(false);
+		},
 	};
 
 	const contactLink = {
 		menuName: "Contact",
-		onClick: () => navigate("/contact"),
+		onClick: async () => {
+			props.setAppNavFade(true);
+			await new Promise((resolve) => setTimeout(resolve, 2000));
+			navigate("/contact");
+			props.setAppNavFade(false);
+		},
 	};
 
 	const homeMenu = [

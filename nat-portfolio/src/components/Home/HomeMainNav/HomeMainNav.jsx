@@ -8,7 +8,7 @@ const HomeMenu = (props) => {
 	const appNavFadeHandler = () => {
 		props.setPageLoaded(false);
 		props.setPageLeaving(true);
-		props.onAppNavFade();
+		props.onAppNavFade(true);
 	};
 	const navMenus = [
 		{
@@ -17,6 +17,7 @@ const HomeMenu = (props) => {
 				appNavFadeHandler();
 				await new Promise((resolve) => setTimeout(resolve, 2000));
 				navigate("/works");
+				props.onAppNavFade(false);
 			},
 		},
 		{

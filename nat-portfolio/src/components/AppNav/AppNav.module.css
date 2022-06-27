@@ -22,7 +22,7 @@
 }
 
 .app-nav-fade {
-	animation: app-nav-fade 2s forwards;
+	animation: app-nav-fade 3s forwards;
 }
 
 @keyframes app-nav-fade {
@@ -42,7 +42,7 @@
 	}
 
 	100% {
-		pacity: 1;
+		opacity: 1;
 		top: 0;
 	}
 }
