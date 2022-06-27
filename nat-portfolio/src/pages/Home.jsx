@@ -18,7 +18,7 @@ const Home = (props) => {
 				setPageLeaving={setPageLeaving}
 				pageLoaded={pageLoaded}
 				pageLeaving={pageLeaving}
-				onFadeOut={props.onFadeOut}
+				onAppNavFade={props.onAppNavFade}
 			/>
 		</div>
 	);

@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 function App() {
 	const [loaded, setLoaded] = useState(false);
-	const [appNavFadeOut, setAppNavFadeOut] = useState(false);
+	const [appNavFade, setAppNavFade] = useState(false);
 
 	const playWelcomeAnimation = async () => {
 		setLoaded(false);
@@ -21,15 +21,15 @@ function App() {
 		playWelcomeAnimation();
 	}, []);
 
-	const onFadeOutHandler = () => {
-		setAppNavFadeOut(true);
+	const onAppNavFadeHandler = () => {
+		setAppNavFade(true);
 	};
 
 	const mainView = (
 		<Router>
-			<AppNav appNavFadeOut={appNavFadeOut} />
+			<AppNav appNavFade={appNavFade} />
 			<Routes>
-				<Route path="/" element={<Home onFadeOut={onFadeOutHandler} />} />
+				<Route path="/" element={<Home onAppNavFade={onAppNavFadeHandler} />} />
 				<Route path="/works" element={<Works />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />

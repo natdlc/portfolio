@@ -5,17 +5,17 @@ import { useNavigate } from "react-router-dom";
 const HomeMenu = (props) => {
 	const navigate = useNavigate();
 
-	const fadeOutHandler = () => {
+	const appNavFadeHandler = () => {
 		props.setPageLoaded(false);
 		props.setPageLeaving(true);
-		props.onFadeOut();
+		props.onAppNavFade();
 	};
 	const navMenus = [
 		{
 			menuName: "WORKS",
 			onClick: async () => {
-				fadeOutHandler();
-				await new Promise((resolve) => setTimeout(resolve, 3000));
+				appNavFadeHandler();
+				await new Promise((resolve) => setTimeout(resolve, 2000));
 				navigate("/works");
 			},
 		},

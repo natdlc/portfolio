@@ -8,7 +8,7 @@ const AppNav = (props) => {
 
 	const homeLink = {
 		menuName: "Home",
-		onClick: () => {navigate("/")},
+		onClick: () => navigate("/"),
 	};
 
 	const worksLink = {
@@ -61,7 +61,7 @@ const AppNav = (props) => {
 			? contactMenu
 			: "";
 
-	const animationController = props.appNavFadeOut && classes["app-nav-fade-out"];
+	const animationController = props.appNavFade && classes["app-nav-fade"];
 	return (
 		<>
 			<Nav
