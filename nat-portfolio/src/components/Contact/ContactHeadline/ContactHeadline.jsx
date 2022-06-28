@@ -8,7 +8,7 @@ const ContactHeadline = () => {
 				<p className={classes["contact-headline_description"]}>
 					If you need a website for your business, interested in hiring me, or
 					just want to reach out, please feel free to send me an email through
-					the form below.
+					dev.natcorpuz@gmail.com
 				</p>
 			</div>
 		</>

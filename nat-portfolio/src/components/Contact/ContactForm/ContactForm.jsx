@@ -6,7 +6,7 @@ const ContactForm = () => {
 	};
 	return (
 		<>
-			<form
+			{/* <form
 				onSubmit={submitHandler}
 				className={classes["contact-form-wrapper"]}
 			>
@@ -36,7 +36,7 @@ const ContactForm = () => {
 					<textarea placeholder="Message" required/>
 				</div>
 				<button>Submit</button>
-			</form>
+			</form> */}
 		</>
 	);
 };
