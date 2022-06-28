@@ -22,11 +22,12 @@ const SubProjectsNav = () => {
 	return (
 		<>
 			<div
+				className="element-fade-in"
 				style={{ position: "relative", maxWidth: "200px", paddingTop: "6rem" }}
 			>
 				<Nav
 					menus={navMenus}
-					menuItemClassNames="sub-projects-nav-item"
+					menuItemClassNames="sub-projects-nav-item main-nav-transition"
 					menuWrapperClassNames="sub-projects-nav-wrapper"
 				/>
 				<p className="sub-projects-description">

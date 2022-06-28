@@ -1,11 +1,12 @@
 import MainProjectsNav from "../components/Works/MainProjectsNav/MainProjectsNav";
 import SubProjectsNav from "../components/Works/SubProjectsNav/SubProjectsNav";
 
-const Works = () => {
+const Works = (props) => {
+	const fadeOutController = props.appNavFade ? "element-fade-out" : "";
+
 	return (
 		<>
-			<div
-			>
+			<div className={fadeOutController}>
 				<MainProjectsNav />
 				<SubProjectsNav />
 			</div>

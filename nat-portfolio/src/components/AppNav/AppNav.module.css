@@ -51,6 +51,25 @@
 	font-size: var(--menuItemFontSize2);
 	letter-spacing: var(--menuItemLetterSpacing);
 	font-weight: 100;
+	position: relative;
+	padding-bottom: 0.2rem;
+}
+
+.app-nav-menu-item-2::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 100%;
+	bottom: -5px;
+	left: 0;
+	border-bottom: 1px solid var(--light);
+	cursor: pointer;
+	z-index: -1;
+	transition: right 0.3s;
+}
+
+.app-nav-menu-item-2:hover::before {
+	right: 0;
 }
 
 @media (min-width: 1200px) {

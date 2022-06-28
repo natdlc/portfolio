@@ -9,7 +9,8 @@ const AboutHeadline = () => {
 					A Web Developer from the Philippines.
 				</p>
 				<p className={classes["about-description"]}>
-					I started coding in 2020. I have 7 cats and 1 dog. When I don't write code, I play video games, watch Netflix, or go for a walk outside.
+					Started coding in 2020. Has 7 cats and 1 dog. Plays PC games when not
+					coding.
 				</p>
 			</div>
 		</>

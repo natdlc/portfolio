@@ -22,11 +22,21 @@ const HomeMenu = (props) => {
 		},
 		{
 			menuName: "ABOUT",
-			onClick: () => navigate("/about"),
+			onClick: async () => {
+				appNavFadeHandler();
+				await new Promise((resolve) => setTimeout(resolve, 2000));
+				navigate("/about");
+				props.onAppNavFade(false);
+			},
 		},
 		{
 			menuName: "CONTACT",
-			onClick: () => navigate("/contact"),
+			onClick: async () => {
+				appNavFadeHandler();
+				await new Promise((resolve) => setTimeout(resolve, 2000));
+				navigate("/contact");
+				props.onAppNavFade(false);
+			},
 		},
 	];
 
@@ -38,6 +48,7 @@ const HomeMenu = (props) => {
 				${props.pageLeaving && "element-fade-out"}
 				${props.pageLoaded && "element-fade-in"} 
 				main-item
+				main-nav-transition
 				`}
 				menus={navMenus}
 				menuWrapperClassNames={classes["home-main-wrapper"]}

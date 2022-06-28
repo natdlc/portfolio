@@ -21,7 +21,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-  animation: welcome 2s forwards;
+  animation: welcome 4s forwards;
 }
 
 @keyframes welcome {

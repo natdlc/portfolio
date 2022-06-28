@@ -8,7 +8,7 @@ const MainProjectsNav = () => {
 			target: "_blank",
 		},
 		{
-			menuName: "Planuhin",
+			menuName: "Planner",
 			menuLink: "https://natdlc.github.io/todo",
 			target: "_blank",
 		},
@@ -22,13 +22,17 @@ const MainProjectsNav = () => {
 	return (
 		<>
 			<div
+				className="element-fade-in"
 				style={{
 					position: "relative",
 					width: "fit-content",
 					paddingTop: "5rem",
 				}}
 			>
-				<Nav menus={navMenus} menuItemClassNames="main-item uppercase" />
+				<Nav
+					menus={navMenus}
+					menuItemClassNames="main-item uppercase main-nav-transition"
+				/>
 				<p className="projects-description">
 					... brought to you by countless hours of coding, fueled by a burning
 					passion for manipulating things on the web.

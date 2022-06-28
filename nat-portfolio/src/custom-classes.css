@@ -68,10 +68,33 @@
 		top: 0px;
 		opacity: auto;
 	}
+
 	100% {
 		top: -25px;
 		opacity: 0;
 	}
+}
+
+.main-nav-transition {
+	position: relative;
+	width: fit-content;
+	cursor: pointer;
+}
+
+.main-nav-transition::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 100%;
+	bottom: -5px;
+	left: 0;
+	border-bottom: 1px solid var(--light);
+	transition: right 0.3s;
+	z-index: -1;
+}
+
+.main-nav-transition:hover::before {
+	right: 0;
 }
 
 @media (min-width: 1200px) {

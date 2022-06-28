@@ -1,9 +1,13 @@
 import classes from "./ContactForm.module.css";
 
 const ContactForm = () => {
+	const submitHandler = (e) => {
+		e.preventDefault();
+	};
 	return (
 		<>
-			<div
+			<form
+				onSubmit={submitHandler}
 				className={classes["contact-form-wrapper"]}
 			>
 				<div className={classes["input-control-wrapper"]}>
@@ -18,6 +22,7 @@ const ContactForm = () => {
 						className={classes["input-control"]}
 						placeholder="Email"
 						type="email"
+						required
 					/>
 				</div>
 				<div className={classes["input-control-wrapper"]}>
@@ -28,10 +33,10 @@ const ContactForm = () => {
 					/>
 				</div>
 				<div className={classes["input-control-wrapper"]}>
-					<textarea placeholder="Message" />
+					<textarea placeholder="Message" required/>
 				</div>
 				<button>Submit</button>
-			</div>
+			</form>
 		</>
 	);
 };

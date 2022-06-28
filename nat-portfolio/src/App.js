@@ -13,7 +13,7 @@ function App() {
 
 	const playWelcomeAnimation = async () => {
 		setLoaded(false);
-		await new Promise((resolve) => setTimeout(resolve, 2000));
+		await new Promise((resolve) => setTimeout(resolve, 4000));
 		setLoaded(true);
 	};
 
@@ -30,9 +30,9 @@ function App() {
 			<AppNav appNavFade={appNavFade} setAppNavFade={setAppNavFade} />
 			<Routes>
 				<Route path="/" element={<Home onAppNavFade={onAppNavFadeHandler} />} />
-				<Route path="/works" element={<Works />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/contact" element={<Contact />} />
+				<Route path="/works" element={<Works appNavFade={appNavFade} />} />
+				<Route path="/about" element={<About appNavFade={appNavFade} />} />
+				<Route path="/contact" element={<Contact appNavFade={appNavFade} />} />
 			</Routes>
 		</Router>
 	);
